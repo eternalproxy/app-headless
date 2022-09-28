@@ -1,6 +1,5 @@
 import { Container, Flex } from "../components/layout"
 import { css, Theme, useTheme } from "@emotion/react"
-import ReactTooltip from "react-tooltip"
 
 const logo = new URL("../assets/logo.png", import.meta.url).toString()
 const sunIcon = new URL("../assets/sun.png", import.meta.url).toString()
@@ -29,7 +28,9 @@ export const Header = ({ onChangeTheme }: Props) => {
     <header css={classes.root}>
       <Container>
         <Flex as="nav">
-          <img src={logo} width="80" alt="Proxy" />
+          <a href="https://www.eternalproxy.com/">
+            <img src={logo} width="80" alt="Eternal Proxy Service" />
+          </a>
           <ul css={classes.menu}>
             <li css={classes.menuItem}>
               <a

@@ -162,7 +162,7 @@ const Dashboard = () => {
                       Add EPSAPI as a custom token
                     </span>
                     <CopyableText
-                      text="0xb846e59af08e9695Fa7C4eD5743E81e623cAA218"
+                      text="0x032cCb98a0fadb150525631C587C1216d2535136"
                       cut
                     />
                   </Flex>
@@ -382,11 +382,11 @@ const lookup = async (input: string) => {
     throw new Error("Invalid address")
   }
 
-  var url = "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+  var url = "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
   var customHttpProvider = new ethers.providers.JsonRpcProvider(url)
 
   const contract = new ethers.Contract(
-    "0xb846e59af08e9695Fa7C4eD5743E81e623cAA218",
+    "0x032cCb98a0fadb150525631C587C1216d2535136",
     abi,
     customHttpProvider,
   )

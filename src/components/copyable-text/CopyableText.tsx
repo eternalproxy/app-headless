@@ -63,7 +63,7 @@ export const CopyableText = (props: Props) => {
     <Flex css={classes.root}>
       <a
         ref={textRef}
-        href={`https://etherscan.io/address/${text}`}
+        href={`https:/goerli.etherscan.io/address/${text}`}
         css={classes.text}
         target="_blank"
         rel="noopener noreferrer"
